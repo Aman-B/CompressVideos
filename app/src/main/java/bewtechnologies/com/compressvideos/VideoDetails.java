@@ -15,4 +15,14 @@ public class VideoDetails {
     public  String videoDetails;
 
 
+    public VideoDetails(String videoThumbnail,String videoDetails) {
+        super();
+        this.videoThumbnail=videoThumbnail;
+        this.videoDetails=videoDetails;
+
+    }
+
+
+
+
 }

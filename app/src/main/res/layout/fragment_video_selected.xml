@@ -36,8 +36,8 @@
             android:layout_height="250dp"
 
             android:layout_centerInParent="true"
-            app:mainColor="@color/colorPrimary"
-            app:secondaryColor="@color/colorAccent"
+            app:mainColor="@color/colorAccent"
+            app:secondaryColor="@color/colorPrimary"
             app:textColor="@android:color/black"
             android:layout_marginLeft="8dp"
             app:layout_constraintLeft_toLeftOf="parent"

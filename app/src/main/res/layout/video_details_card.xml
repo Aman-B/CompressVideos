@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:weightSum="1"
     android:background="#FFFFFF">
 
@@ -42,10 +42,24 @@
         <TextView
             android:id="@+id/video_details"
             android:layout_width="209dp"
-            android:layout_height="match_parent"
+            android:layout_height="58dp"
             android:layout_marginLeft="130dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_sharecompressedVideo"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="65dp"
+            android:background="#FFFFFF"
+            android:text="share"
+            android:textSize="12sp" />
+
     </android.support.v7.widget.CardView>
+
 
 
 

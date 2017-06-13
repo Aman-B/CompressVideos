@@ -40,7 +40,7 @@ public class ListCompressedVideosFragment extends Fragment {
     private ArrayList<String> listthumbs;
     private  ArrayList<String> listvideodetails;
 
-    private VideoDetails mVideoDetails=new VideoDetails();
+
 
     public ListCompressedVideosFragment() {
         // Required empty public constructor
@@ -80,14 +80,16 @@ public class ListCompressedVideosFragment extends Fragment {
             for(String thumbs:listthumbs)
             {
 
-                    mVideoDetails.videoThumbnail=thumbs;
-                    mVideoDetails.videoDetails=listvideodetails.get(i);
-                    videoDetailses[i]=mVideoDetails;
+                    VideoDetails videoDetails = new VideoDetails(thumbs,listvideodetails.get(i));
+                    videoDetailses[i]=videoDetails;
 
-                Log.i("here ", "onlist:  "+videoDetailses[i].videoDetails+ " i "+i);
+
+                    Log.i("here ", "onlist:  "+videoDetailses[i].videoDetails+ " i "+i);
                     i++;
 
             }
+            Log.i("here ", "onl  "+videoDetailses[0].videoDetails+ " i "+0);
+
         }
 
     }
@@ -104,8 +106,9 @@ public class ListCompressedVideosFragment extends Fragment {
 
         mRecyclerView.setLayoutManager(linearLayoutManager);
 
-        VideoDetails[] mVideoDetailses= new VideoDetails[1];
+
 //        Log.i("here "," length "+videoDetailses[0].videoThumbnail);
+        Log.i("here ", "onlist:1  "+videoDetailses[2].videoDetails+ " i "+2);
 
         VideoDataAdapter mVideoDataAdapter= new VideoDataAdapter(videoDetailses,getContext());
 
