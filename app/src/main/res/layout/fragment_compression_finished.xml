@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="bewtechnologies.com.compressvideos.CompressionFinishedFragment"
+    android:background="#FFFFFF">
+
+
+<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_shareVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginTop="8dp"
+
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="@color/colorPrimary"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_radius="10dp"
+            fancy:fb_text="Share Video"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintLeft_toLeftOf="parent"
+            fancy:layout_constraintRight_toRightOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
